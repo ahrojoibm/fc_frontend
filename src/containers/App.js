@@ -22,10 +22,7 @@ class App extends Component {
 
     callApiHandler = () => {
       //console.log(process.env.BACKEND_URL)
-      let config = {
-        headers: {'Access-Control-Allow-Origin': '*'}
-      };
-      axios.get('http://fc-backend3-default.team-kors-cluster-4860349f6a1f3fb50b8ba96afd99ce5f-0000.us-south.containers.appdomain.cloud/projects/all', config).
+      axios.get('http://fc-backend3-default.team-kors-cluster-4860349f6a1f3fb50b8ba96afd99ce5f-0000.us-south.containers.appdomain.cloud/projects/all').
       then( response => {
         console.log(response)
       }).catch( error => {
