@@ -28,6 +28,9 @@ class Menu extends React.Component {
                         <li className="nav-item" onClick={() => this.props.change("contacto")}>
                             <a className="nav-link" >Contacto</a>
                         </li>
+                        <li className="nav-item" onClick={() => this.props.change("login")}>
+                            <a className="nav-link" >login</a>
+                        </li>
                     </ul>
                     <form className="form-inline mt-2 mt-md-0">
                         <input className="form-control mr-sm-2" type="text" placeholder="Buscar" aria-label="Buscar"/>

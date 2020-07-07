@@ -7,8 +7,11 @@ import Nosotros from '../components/nosotros/Nosotros';
 import Contacto from '../components/contacto/Contacto';
 import ProyectosFC from '../components/proyectosFC/ProyectosFC';
 import Menu from '../components/menu/Menu';
+import Login from '../components/login/Login';
 
 import axios from "axios";
+
+//url = process.env.REACT_APP_BACKEND_URL;
 
 class App extends Component {
 
@@ -20,15 +23,15 @@ class App extends Component {
       this.setState({page: newPage})
     }
 
-    callApiHandler = () => {
-      //console.log(process.env.BACKEND_URL)
-      axios.get('http://fc-backend3-default.team-kors-cluster-4860349f6a1f3fb50b8ba96afd99ce5f-0000.us-south.containers.appdomain.cloud/projects/all').
+    /* callApiHandler = () => {
+      //console.log(process.env.REACT_APP_BACKEND_URL)
+      axios.get(url + 'projects/all').
       then( response => {
         console.log(response)
       }).catch( error => {
         console.log(error)
       })
-    }
+    } */
 
     render() {
 
@@ -40,6 +43,8 @@ class App extends Component {
         view = (<Nosotros/>)
       } else if (this.state.page === 'contacto') {
         view = (<Contacto/>)
+      } else if (this.state.page === 'login') {
+          view = (<Login/>)
       } else {
         view = (<ProyectosFC/>)
       }

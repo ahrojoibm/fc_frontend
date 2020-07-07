@@ -10,18 +10,15 @@ class Detalles extends React.Component {
                 <div className="row">
                     <div className="col-md-4">
                         <h2>Objetivo</h2>
-                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                        <p><a className="btn btn-secondary" href="#" role="button">Leer más &raquo;</a></p>
+                        <p>Completar el programa de estudio a través del desarrollo de los cursos y complementarlo con una participación activa en MVP's logrando así aprender e integrar las tecnologías de IBM.</p>
                     </div>
                     <div className="col-md-4">
                         <h2>Misión</h2>
-                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                        <p><a className="btn btn-secondary" href="#" role="button">Leer más &raquo;</a></p>
+                        <p>Formar a nuestros students de la mejor manera posible preparándolos para trabajar con las tecnologías de IBM y afrontar los desafíos de la industria tecnológica.  </p>
                     </div>
                     <div className="col-md-4">
                         <h2>Visión</h2>
-                        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo.</p>
-                        <p><a className="btn btn-secondary" href="#" role="button">Leer más &raquo;</a></p>
+                        <p>Expandir el programa a otras áreas de IBM logrando formar para cada una futuros Ibmers que conozcan las tecnologías y metodologías de IBM.</p>
                     </div>
                 </div>
     
