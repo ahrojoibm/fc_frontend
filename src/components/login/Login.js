@@ -24,20 +24,16 @@ class Login extends React.Component {
         })
     }
 
-    loginHandler = (event) => {
+    loginHandler = () => {
         let body = {
-            'username': this.state.username,
-            'password': this.state.password
+            username: this.state.username,
+            password: this.state.password
         }
-        axios.post(process.env.REACT_APP_BACKEND_URL + '/api/token/', body)
-        .then(response => {
-            window.localStorage.setItem('token', response.data['token']);
+        console.log(process.env.REACT_APP_BACKEND_URL + 'api/token');
+        axios.post(process.env.REACT_APP_BACKEND_URL + 'api/token/', body).then(response => {
+            window.localStorage.setItem('token', response.data['access']);
             console.log(response);
-
-        }).catch(error => {
-            console.log(error);
         })
-
     }
  
     render() {
@@ -50,7 +46,7 @@ class Login extends React.Component {
                                 <h2>Inicio de Sesion</h2>
                                 <form action="/" className="was-validated">
                                     <div className="form-group">
-                                        <label for="user">Nombre de Usuario:</label>
+                                        <label htmlFor="user">Nombre de Usuario:</label>
                                         <input type="text" className="form-control" id="user" 
                                         placeholder="Enter username" 
                                         name="user" 
@@ -59,7 +55,7 @@ class Login extends React.Component {
                                         required></input>
                                     </div>
                                     <div className="form-group">
-                                        <label for="pass">Contraseña:</label>
+                                        <label htmlFor="pass">Contraseña:</label>
                                         <input type="password" className="form-control" id="pass" 
                                         placeholder="Enter password" 
                                         name="pass"
@@ -67,7 +63,7 @@ class Login extends React.Component {
                                         value={this.state.password} 
                                         required></input>
                                     </div>
-                                    <button type="submit" className="btn btn-secondary" onClick={this.loginHandler}>Enviar</button>
+                                    <button type="button" className="btn btn-secondary" onClick={this.loginHandler}>Enviar</button>
                                 </form>
                             </div>
                         </div>
