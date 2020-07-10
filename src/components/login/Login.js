@@ -29,8 +29,8 @@ class Login extends React.Component {
             username: this.state.username,
             password: this.state.password
         }
-        console.log(process.env.REACT_APP_BACKEND_URL + 'api/token');
-        axios.post(process.env.REACT_APP_BACKEND_URL + 'api/token/', body).then(response => {
+        console.log("http://fc-backend3-default.team-kors-cluster-4860349f6a1f3fb50b8ba96afd99ce5f-0000.us-south.containers.appdomain.cloud/" + 'api/token');
+        axios.post("http://fc-backend3-default.team-kors-cluster-4860349f6a1f3fb50b8ba96afd99ce5f-0000.us-south.containers.appdomain.cloud/" + 'api/token/', body).then(response => {
             window.localStorage.setItem('token', response.data['access']);
             console.log(response);
         })

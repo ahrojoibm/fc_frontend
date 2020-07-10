@@ -20,7 +20,7 @@ class ProyectosFC extends React.Component {
       },
     };
     axios
-      .get(process.env.REACT_APP_BACKEND_URL + "projects/all/", config)
+      .get("http://fc-backend3-default.team-kors-cluster-4860349f6a1f3fb50b8ba96afd99ce5f-0000.us-south.containers.appdomain.cloud/" + "projects/all/", config)
       .then((response) => {
         console.log(response);
         this.setState({
