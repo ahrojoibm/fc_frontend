@@ -1,3 +1,23 @@
+# Antes de comenzar
+
+El proyecto se encuentra ejecutando en un cluster de openshift dentro de ibm cloud, para replicarlo es necesario solicitar permiso de algún superior puesto que existe un costo asociado. La base de datos utilizada es Cloudant, en una instancia Lite que no requiere costos. La aplicación en general corresponde a un Frontend en React y un Backend desarrollado en Django (2.2.*, se utiliza esta versión porque es la última que soporta OpenShift).
+
+# FC Projects Front-End
+
+Este es un proyecto creado con la intencion de probar las tecnologías de openshift mostrando un pequeño demo con los proyectos realizados en FutureClub, se utilizo un servidor con el framework django para trabajar como una API REST.
+
+# Deployment
+
+## Local
+
+Para ejecutar el proyecto localmente con el fin de realizar pruebas se deben realizar una serie de trabajos:
+
+## Repositorio de Github
+
+Descargar el proyecto del siguiente repositorio:
+
+**https://github.com/ahrojoibm/fc_frontend.git**
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
