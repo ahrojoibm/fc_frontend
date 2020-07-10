@@ -23,16 +23,6 @@ class App extends Component {
       this.setState({page: newPage})
     }
 
-    /* callApiHandler = () => {
-      //console.log(process.env.REACT_APP_BACKEND_URL)
-      axios.get(url + 'projects/all').
-      then( response => {
-        console.log(response)
-      }).catch( error => {
-        console.log(error)
-      })
-    } */
-
     render() {
 
       let view = null;
@@ -53,7 +43,6 @@ class App extends Component {
         <div className="App">
           <Menu change={this.changePageHandler}></Menu>
           {view}
-          <button className="btn btn-primary" onClick={this.callApiHandler}>Press me</button>
         </div>
       );
     }
